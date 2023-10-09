@@ -1,0 +1,172 @@
+.navbar {
+    background-color: #f8f5f5;
+    position: fixed;
+    height: 50px;
+    top: 0;
+    width: 950px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-left: 250px;
+}
+.navbar-item {
+    position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 160px;
+}
+.navbar-item:hover .dropdown-content {
+  display: block;
+}
+.down-menu ul {
+    padding: 0;
+    margin: 0; /* 去除上下外边距 */
+    list-style: none;
+}
+.down-menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 0px;
+}
+.triangle-down::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #ee1111;
+}
+.i {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.small-text  {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 50;
+    color: black; 
+    font-family: SimSun; 
+}
+a:anylink :hover {
+    color: red; /* 设置悬停时的字体颜色为红色 */
+}
+.small-text:visited {
+  color: red; /* 设置已访问链接的文本颜色 */
+}
+.flex-container ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* 水平居中 */
+    margin-left: 81px;
+}
+.flex-container li {
+    margin-right: 1px; /* 调整元素之间的间距 */
+}
+.subnav {
+    height: 40px;
+    color: black;
+    margin-left: 250px;
+    width: 988px;
+    background-image: linear-gradient(to bottom, #ffffff, #d3f1f9);
+    border: 1px solid #d3f1f9;
+    display: flex;
+    align-items: center;
+}
+#section1, #section2, #section3 {
+      font-size: 16px;
+      text-align: center;
+}
+a:any-link {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:any-link:hover { 
+   color: red;
+} 
+.circle:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(25, 149, 220);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.container1 {
+    border: 1px solid #bae7f9;
+    padding: 10px;
+    margin-top: -22px;
+    height: 30px;
+    width: 968px; 
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container2 {
+    border: 1px solid #bae7f9;
+    padding: 10px;
+    height: 60px;
+    width: 968px; 
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container3 {
+    border: 1px solid #bae7f9;
+    padding: 10px;
+    height: 580px;
+    width: 968px; 
+    margin-left: 250px;
+}
+.container3 p {
+  text-indent: 2em;
+}
+.anchor-link {
+    scroll-margin-top: 65px;
+}
+table {
+  width: 989px;
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid gray;
+}
+tr:first-child {
+  background-color: #ccc; 
+}
+tr:first-child th {
+  background-color: #ccc;
+}
+hr {
+  border-color: rgb(91, 216, 254);
+  margin-left: 250px;
+  border-width: 1px;
+  width: 988px;
+}
+.footer {
+  margin-left: 253px;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 18px;
+}
+.footer .disclaimer {
+    margin-top: 10px;
+    color: #373737;
+    text-align: center;
+}
