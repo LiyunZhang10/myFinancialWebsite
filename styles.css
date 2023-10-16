@@ -3,23 +3,23 @@
     position: fixed;
     height: 50px;
     top: 0;
-    width: 950px;
+    width: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    margin-left: 250px;
+    box-sizing: border-box;
 }
 .navbar-item {
     position: relative;
 }
 .dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 160px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 160px;
 }
 .navbar-item:hover .dropdown-content {
   display: block;
@@ -64,6 +64,18 @@ a:anylink :hover {
 .small-text:visited {
   color: red; /* 设置已访问链接的文本颜色 */
 }
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.boxOfIndex {
+  border: 1px solid black;
+  padding: 10px;
+  width: 900px;
+  height: 40px;
+  box-sizing: border-box;
+}
 .flex-container ul {
     display: flex;
     list-style: none;
@@ -78,12 +90,12 @@ a:anylink :hover {
 .subnav {
     height: 40px;
     color: black;
-    margin-left: 250px;
-    width: 988px;
+    width: 900px;
     background-image: linear-gradient(to bottom, #ffffff, #d3f1f9);
     border: 1px solid #d3f1f9;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
 }
 #section1, #section2, #section3 {
       font-size: 16px;
@@ -109,30 +121,27 @@ a:any-link:hover {
 .container1 {
     border: 1px solid #bae7f9;
     padding: 10px;
-    margin-top: -22px;
-    height: 30px;
-    width: 968px; 
-    margin-left: 250px;
+    height: 50px;
+    width: 900px; 
+    box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .container2 {
     border: 1px solid #bae7f9;
     padding: 10px;
-    height: 60px;
-    width: 968px; 
-    margin-left: 250px;
+    height: 72px;
+    width: 900px; 
     display: flex;
     align-items: center;
-    justify-content: center;
+    box-sizing: border-box;
 }
 .container3 {
     border: 1px solid #bae7f9;
     padding: 10px;
-    height: 580px;
-    width: 968px; 
-    margin-left: 250px;
+    height: 630px;
+    width: 900px; 
+    box-sizing: border-box;
 }
 .container3 p {
   text-indent: 2em;
@@ -140,33 +149,17 @@ a:any-link:hover {
 .anchor-link {
     scroll-margin-top: 65px;
 }
-table {
-  width: 989px;
-  border-collapse: collapse;
-}
-td, th {
-  border: 1px solid gray;
-}
-tr:first-child {
-  background-color: #ccc; 
-}
-tr:first-child th {
-  background-color: #ccc;
-}
+
 hr {
   border-color: rgb(91, 216, 254);
-  margin-left: 250px;
   border-width: 1px;
-  width: 988px;
+  width: 900px;
+  box-sizing: border-box;
 }
-.footer {
-  margin-left: 253px;
-    margin-top: 10px;
+.disclaimer {
     font-size: 12px;
     line-height: 18px;
-}
-.footer .disclaimer {
+    width: 900px;
     margin-top: 10px;
     color: #373737;
-    text-align: center;
 }
