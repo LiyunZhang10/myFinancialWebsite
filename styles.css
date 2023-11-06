@@ -22,7 +22,7 @@
     width: 160px;
 }
 .navbar-item:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 .down-menu ul {
     padding: 0;
@@ -30,12 +30,12 @@
     list-style: none;
 }
 .down-menu li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6px;
-  border: 1px solid #ccc;
-  margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 0px;
 }
 .triangle-down::after {
     content: "";
@@ -62,19 +62,19 @@ a:anylink :hover {
     color: red; /* 设置悬停时的字体颜色为红色 */
 }
 .small-text:visited {
-  color: red; /* 设置已访问链接的文本颜色 */
+    color: red; /* 设置已访问链接的文本颜色 */
 }
 .container {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .boxOfIndex {
-  border: 1px solid black;
-  padding: 10px;
-  width: 900px;
-  height: 40px;
-  box-sizing: border-box;
+    border: 1px solid black;
+    padding: 10px;
+    width: 900px;
+    height: 40px;
+    box-sizing: border-box;
 }
 .flex-container ul {
     display: flex;
@@ -98,13 +98,13 @@ a:anylink :hover {
     box-sizing: border-box;
 }
 #section1, #section2, #section3 {
-      font-size: 16px;
-      text-align: center;
+    font-size: 16px;
+    text-align: center;
 }
 a:any-link {
-  color: black;
-  cursor: pointer;
-  text-decoration: none;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
 }
 a:any-link:hover { 
    color: red;
@@ -144,17 +144,17 @@ a:any-link:hover {
     box-sizing: border-box;
 }
 .container3 p {
-  text-indent: 2em;
+    text-indent: 2em;
 }
 .anchor-link {
     scroll-margin-top: 65px;
 }
 
 hr {
-  border-color: rgb(91, 216, 254);
-  border-width: 1px;
-  width: 900px;
-  box-sizing: border-box;
+    border-color: rgb(91, 216, 254);
+    border-width: 1px;
+    width: 900px;
+    box-sizing: border-box;
 }
 .disclaimer {
     font-size: 12px;
