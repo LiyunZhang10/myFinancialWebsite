@@ -3,7 +3,7 @@
     position: fixed;
     height: 50px;
     top: 0;
-    width: 900px;
+    width: 999px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@
     top: 100%;
     background-color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 160px;
+    width: 120px;
 }
 .navbar-item:hover .dropdown-content {
     display: block;
@@ -34,7 +34,7 @@
     align-items: center;
     justify-content: center;
     padding: 6px;
-    border: 1px solid #ccc;
+    border: 1px solid lightblue;
     margin-bottom: 0px;
 }
 .triangle-down::after {
@@ -61,18 +61,14 @@
 a:anylink :hover {
     color: red; /* 设置悬停时的字体颜色为红色 */
 }
-.small-text:visited {
-    color: red; /* 设置已访问链接的文本颜色 */
-}
 .container {
     display: flex;
     justify-content: center;
 }
-
 .boxOfIndex {
     border: 1px solid black;
     padding: 10px;
-    width: 900px;
+    width: 999px;
     height: 40px;
     box-sizing: border-box;
 }
@@ -90,7 +86,7 @@ a:anylink :hover {
 .subnav {
     height: 40px;
     color: black;
-    width: 900px;
+    width: 999px;
     background-image: linear-gradient(to bottom, #ffffff, #d3f1f9);
     border: 1px solid #d3f1f9;
     display: flex;
@@ -122,7 +118,7 @@ a:any-link:hover {
     border: 1px solid #bae7f9;
     padding: 10px;
     height: 50px;
-    width: 900px; 
+    width: 999px; 
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -131,7 +127,7 @@ a:any-link:hover {
     border: 1px solid #bae7f9;
     padding: 10px;
     height: 72px;
-    width: 900px; 
+    width: 999px; 
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -140,7 +136,7 @@ a:any-link:hover {
     border: 1px solid #bae7f9;
     padding: 10px;
     height: 200px;
-    width: 900px; 
+    width: 999px; 
     box-sizing: border-box;
 }
 .container3 p {
@@ -149,17 +145,38 @@ a:any-link:hover {
 .anchor-link {
     scroll-margin-top: 65px;
 }
-
 hr {
     border-color: rgb(91, 216, 254);
     border-width: 1px;
-    width: 900px;
+    width: 999px;
     box-sizing: border-box;
 }
 .disclaimer {
     font-size: 12px;
     line-height: 18px;
-    width: 900px;
+    width: 999px;
     margin-top: 10px;
     color: #373737;
+}
+table {
+    width: 999px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #D7D7D7;
+    margin-bottom: 5px;
+}
+th, td {
+    border: 1px solid #D7D7D7;
+    border-width: 0.5px; 
+    padding: 8px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+th:nth-child(2), td:nth-child(2) {
+    width: 140px;
+}
+tr:first-child {
+    background-color: rgb(241, 238, 238);
 }
