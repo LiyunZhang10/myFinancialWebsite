@@ -11,7 +11,7 @@ merged_label = labels[:-2] + ['其他']
 
 colors = ['red', 'steelblue', 'green', 'orange'] 
 
-# 绘制饼图
+# Plot the pie chart
 plt.rcParams['font.sans-serif'] = ['SimHei']
 patches, l_text, p_text = plt.pie(merged_ratio, colors=colors, labels=merged_label, labeldistance=1.1, autopct="%1.1f%%", startangle=90, pctdistance=0.6)
 plt.axis("equal")  

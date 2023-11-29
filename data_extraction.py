@@ -1,7 +1,7 @@
-from selenium.webdriver.common.by import By
-from selenium import webdriver
-import pandas as pd
 import os.path
+import pandas as pd
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 def is_number_string(string):
     unit_words = {'万', '亿', '%'}
@@ -17,9 +17,7 @@ driver = webdriver.Chrome()
 driver.implicitly_wait(10)
 driver.get('https://emweb.securities.eastmoney.com/PC_HSF10/BusinessAnalysis/Index?type=web&code=SZ300059#')
 
-# Get all table elements
 tables = driver.find_elements(By.TAG_NAME, 'table')
-
 all_data = []
 
 # Iterate over each table
