@@ -1,6 +1,6 @@
 # myFinancialWebsite
 
-Hello everyone! I am a sophomore student from the University of Electronic Science and Technology of China, and I am excited to present my coursework project. 📊🎉
+Hello everyone! I am a sophomore student from the University of Electronic Science and Technology of China, and I am thrilled to present my coursework project. 📊🎉
 
 In this project, I have developed a simple financial webpage that provides users with basic financial data and visualizations. 💼💻
 
