@@ -11,7 +11,6 @@ def is_number_string(string):
     cleaned_str = ''.join(c for c in string if c.isdigit())
     return bool(cleaned_str) or string == '--'
 
-
 # Create a WebDriver instance
 driver = webdriver.Chrome()
 driver.implicitly_wait(10)
