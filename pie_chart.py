@@ -15,7 +15,7 @@ fig = plt.figure(figsize=(6, 6))
 
 # Plot the pie chart with empty labels
 plt.rcParams['font.sans-serif'] = ['SimHei']
-plt.pie(merged_ratio, labels=[''] * len(merged_ratio), colors=colors, autopct='%1.1f%%')
+plt.pie(merged_ratio, colors=colors, autopct='%1.1f%%')
 plt.axis('equal')
 
 # Set the title
