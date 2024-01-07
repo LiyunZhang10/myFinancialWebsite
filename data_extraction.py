@@ -13,7 +13,7 @@ def is_number_string(string):
 
 # Create a WebDriver instance
 driver = webdriver.Chrome()
-driver.implicitly_wait(10)
+driver.implicitly_wait(5)
 driver.get('https://emweb.securities.eastmoney.com/PC_HSF10/BusinessAnalysis/Index?type=web&code=SZ300059#')
 
 tables = driver.find_elements(By.TAG_NAME, 'table')
