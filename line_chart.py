@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('output.csv')
+df = pd.read_csv('myFinancialWebsite/output.csv')
 
 # Calculate the sum of data for a specified row and the following three rows
 def sum_data(df, start_row, col):
@@ -17,8 +17,8 @@ def sum_data(df, start_row, col):
         total += number
     return total
 
-income = [sum_data(df, 42, 0), sum_data(df, 32, 0), sum_data(df, 23, 0), sum_data(df, 15, 0), sum_data(df, 4, 0)]
-profit = [sum_data(df, 42, 4), sum_data(df, 32, 4), sum_data(df, 23, 4), sum_data(df, 15, 4), sum_data(df, 4, 4)]
+income = [sum_data(df, 32, 0), sum_data(df, 24, 0), sum_data(df, 17, 0), sum_data(df, 11, 0), sum_data(df, 2, 0)]
+profit = [sum_data(df, 32, 4), sum_data(df, 24, 4), sum_data(df, 17, 4), sum_data(df, 11, 4), sum_data(df, 2, 4)]
 
 time = ['2021-06-30', '2021-12-31', '2022-06-30', '2022-12-31', '2023-06-30']
 

@@ -1,21 +1,27 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('output.csv')
+df = pd.read_csv('myFinancialWebsite/output.csv')
 
-ratio = [float(value[:-1]) for value in df.iloc[42:46, 1]]
-
-labels = ['证券业务', '金融电子商务服务', '金融数据服务', '互联网广告服务等']
+labels = ['证券业务', '金融电子商务服务', '其他']
+ratio = [float(value[:-1]) for value in df.iloc[32:36, 1]]
 merged_ratio = ratio[:-2] + [sum(ratio[-2:])]
-merged_label = labels[:-2] + ['其他']
 
-colors = ['red', 'steelblue', 'green', 'orange'] 
+# Select three visually appealing colors
+colors = ['#FF6384', '#36A2EB', '#FFCE56']
 
-# Plot the pie chart
+# Set figure size
+fig = plt.figure(figsize=(6, 6))
+
+# Plot the pie chart with empty labels
 plt.rcParams['font.sans-serif'] = ['SimHei']
-patches, l_text, p_text = plt.pie(merged_ratio, colors=colors, labels=merged_label, labeldistance=1.1, autopct="%1.1f%%", startangle=90, pctdistance=0.6)
-plt.axis("equal")  
-plt.title('2021-06-30 按产品分类得到的收入比例饼图')
-plt.legend()
+plt.pie(merged_ratio, labels=[''] * len(merged_ratio), colors=colors, autopct='%1.1f%%')
+plt.axis('equal')
+
+# Set the title
+plt.title('2021-06-30 按产品分类得到的收入比例')
+
+# Add a legend and adjust its position
+plt.legend(labels, loc='lower left')
 
 plt.show()
