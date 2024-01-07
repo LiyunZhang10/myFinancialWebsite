@@ -1,1 +1,0 @@
-labels=[''] * len(merged_ratio),
