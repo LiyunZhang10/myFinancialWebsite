@@ -11,11 +11,13 @@ colors = ['#FF8000', '#00FF00', '#FFFF00']
 # Set figure size
 fig = plt.figure(figsize=(6, 6))
 
-# Plot the pie chart without labels
+# Plot the donut chart without labels
 plt.rcParams['font.sans-serif'] = ['SimHei']
-plt.pie(ratio, colors=colors, autopct='%.1f%%')
+plt.pie(ratio, colors=colors, autopct='%.1f%%', wedgeprops={'width': 0.5})
 
 # Plot the legend
 plt.legend(labels, loc='lower right', prop={'size': 8})
 plt.title('2021-12-31 按产品分类成本比例圆环图')
+
+# Show the plot
 plt.show()
